@@ -1,7 +1,7 @@
 
 # SefAgent
 
-llm agent which can learn human characterisitcs from user conversation. The key idea is to human personality traits into 13 types, such as openness, conscientiousness, honestness, etc. Based on the converstaion between users and llm agent, it can a vector representation to simulate human personality while responding back to users. 
+A llm agent which can learn human characterisitcs from user conversation. The key idea is to classify human personality traits into 13 types, such as openness, conscientiousness, honestness, etc. Based on the converstaion between users and llm agent, it can learn a vector representation to simulate human personality while responding back to users. 
 
 
 A Python implementation which can help agent itself to have human personality traits. It has two parts:
@@ -58,17 +58,14 @@ curl -X POST -H "Content-Type: application/json" -d '{"prompt": "hello"}' http:/
 ```
 
 
-
 ### Example Data
 
 behavior_data.csv: an example to format the training data for human behavior classifier
 
 
-
 ### Samples
 
-user message = "what are the top 10 customers by sales"
-![result slide](output.pptx)
+curl -X POST -H "Content-Type: application/json" -d '{"prompt": "I think you are not honest while answering my question"}' http://localhost:5000/generate
 
 
 ### Library Dependences
