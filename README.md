@@ -3,6 +3,7 @@
 
 llm agent which can learn human characterisitcs from user conversation. The key idea is to human personality traits into 13 types, such as openness, conscientiousness, honestness, etc. Based on the converstaion between users and llm agent, it can a vector representation to simulate human personality while responding back to users. 
 
+
 A Python implementation which can help agent itself to have human personality traits. It has two parts:
 (1) train a multi-classifier which can classification conversations or sententences into human personality traits, 
     -- prepare training data, (text, label) pairs
@@ -10,6 +11,7 @@ A Python implementation which can help agent itself to have human personality tr
         ```python
         python train_behaviorclassifier.py
         ```
+
 (2) run llmserver.py to learn human perosnality from conversation
     -- they are personalized_characteristics and global_characteristics, where global_characteristics feature the agent personality, while personalized_characteristics will be the reciprocal trait mapping for user behavior
     -- run server as below
