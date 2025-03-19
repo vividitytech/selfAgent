@@ -1,12 +1,12 @@
 
-# SefAgent
+# sefAgent
 
 A llm agent which can learn human characterisitcs from user conversation. The key idea is to classify human personality traits into 13 types, such as openness, conscientiousness, honestness, etc. Based on the converstaion between users and llm agent, it can learn a vector representation to simulate human personality while responding back to users. 
 
 
 A Python implementation which can help agent itself to have human personality traits. It has two parts:
 
-(1) train a multi-class classifier which can classify conversations or sententences into human personality traits, 
+(1) train a multi-class classifier which can classify conversations or sentences into human personality traits, 
 
     -- prepare training data, (text, label) pairs
     
