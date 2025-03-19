@@ -57,7 +57,7 @@ class LLMApiService:
         return self.conversation_history[ip_address]
 
     def get_personalized_characteristics_for_ip(self, ip_address):
-        """Retrieves the conversation history for a given IP address."""
+        """Retrieves the personalized characteristics for a given IP address/user."""
         if ip_address not in self.personalized_characteristics:
             self.personalized_characteristics[ip_address] = np.zeros(self.num_personality)
         return self.personalized_characteristics[ip_address]
