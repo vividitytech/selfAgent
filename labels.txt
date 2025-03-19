@@ -1,0 +1,1 @@
+{"neutral": 0, "intelligence": 1, "happiness": 2, "sex": 3, "creativity": 4, "loyalness": 5, "kindness": 6, "openness": 7, "patientness": 8, "ambition": 9, "honestness": 10, "courageousness": 11, "humbleness": 12}
